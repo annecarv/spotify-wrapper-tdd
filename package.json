@@ -13,7 +13,7 @@
     "lint": "eslint src/*.js",
     "prepush": "npm run lint",
     "watch": "npm run build -- --watch",
-    "server": "webpack-dev-server --inline --open",
+    "start": "webpack-dev-server --inline --open",
     "test": "mocha --require babel-register",
     "test:tdd": "mocha --require babel-register --watch",
     "test:coverage": "nyc npm test"
@@ -33,6 +33,7 @@
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",
     "@babel/node": "^7.18.6",
+    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.18.6",
     "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
@@ -52,7 +53,7 @@
     "sinon": "^14.0.0",
     "sinon-chai": "^3.7.0",
     "sinon-stub-promise": "^4.0.0",
-    "webpack": "^5.73.0",
+    "webpack": "^4.29.3",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },

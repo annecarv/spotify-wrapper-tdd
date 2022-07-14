@@ -1,9 +1,9 @@
 {
   "presets": [
     ["@babel/preset-env", {
-      "targets": { "esmodules": false },
+      "targets": { "esmodules": true },
       "bugfixes": true,
-      "useBuiltIns": false,
+      "useBuiltIns": false
     }]
-  ],
+  ]
 }
