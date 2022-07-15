@@ -1,17 +1,17 @@
-import { join } from 'path'
+const { join } = require('path')
 
 const include = join(__dirname, 'src')
 
-export default {
+module.exports = {
   entry: "./src/index",
   output: {
-    path: path.join(__dirname, "dist"),
+    path: join(__dirname, "dist"),
     libraryTarget: 'umd',
     library: 'spotifyWrapper'
   },
   devtool: 'source-map',
   module: {
-    loaders: [
+    rules: [
       {test: /\.js$/, loader: 'babel-loader', include},
     ]
   }
